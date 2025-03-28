@@ -14,7 +14,7 @@ Bienvenido a **CozyBrew**, un temporizador Pomodoro inspirado en el encanto de l
 ---
 
 ## 🎨 Capturas de pantalla
-![CozyBrew UI] (https://github.com/SharkkTeeth/CozyBrew/blob/main/assets/screenshots/primerapantalla.PNG?raw=true)
+![image alt] (https://github.com/SharkkTeeth/CozyBrew/blob/main/assets/screenshots/primerapantalla.PNG?raw=true)
 
 ---
 
