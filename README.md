@@ -14,8 +14,7 @@ Bienvenido a **CozyBrew**, un temporizador Pomodoro inspirado en el encanto de l
 ---
 
 ## 🎨 Capturas de pantalla
-❌![CozyBrew UI]
-https://cdn.discordapp.com/attachments/1075208904843214881/1355049221589434399/primerapantalla.PNG?ex=67e7836e&is=67e631ee&hm=8cced9e05af3ef8c20b6fe820fd8b6d0d124f2307d9e5b648aa2edf2952cfd6d& (en proceso...)
+❌![CozyBrew UI] (en proceso...)
 
 ---
 
