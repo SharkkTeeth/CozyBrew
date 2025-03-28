@@ -21,7 +21,7 @@ Bienvenido a **CozyBrew**, un temporizador Pomodoro inspirado en el encanto de l
 ## 🚀 Instalación
 1. Clona este repositorio:
    ```sh
-   git clone https://github.com/tu-usuario/CozyBrew.git
+   git clone https://github.com/SharkkTeeth/CozyBrew.git
    ```
 2. Ingresa al directorio del proyecto:
    ```sh
