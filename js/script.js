@@ -1,7 +1,7 @@
 console.log("Script cargado correctamente");
 
 let bebidaSeleccionada = "espresso"; //por defecto
-let time = 25 * 60; // 25 minutos en segundos
+let time = 5 * 60; // 25 minutos en segundos
 let interval;
 let running = false; //indicador de que el temporizador esta en marcha
 
@@ -41,7 +41,7 @@ function toggleTimer() {
         alert("¡Tiempo terminado!");
         btn.innerText = "Iniciar";
         running = false;
-        time = 25 * 60; //reiniciar tiempo
+        time = 5 * 60; //reiniciar tiempo
         document.getElementById("timer").innerText = "25:00";
       } else {
         time--;
