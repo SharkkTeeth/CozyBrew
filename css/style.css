@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Nostalgia";
+  src: url(../assets/font/nostalgia.ttf);
+}
+
 :root {
   --blanco: #f3e9dc;
   --oscuro: #5e3023;
@@ -11,7 +16,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Nostalgia";
   color: var(--font-color);
   text-align: center;
   background-color: #f3e9dc;
