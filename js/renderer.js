@@ -1,8 +1,7 @@
+document.getElementById("minimize-btn").addEventListener("click", () => {
+  window.api.minimize();
+});
 
-  document.getElementById("minimize").addEventListener("click", () => {
-    window.api.minimize();
-  });
-
-  document.getElementById("close").addEventListener("click", () => {
-    window.api.close();
-  });
+document.getElementById("close-btn").addEventListener("click", () => {
+  window.api.close();
+});

@@ -1,4 +1,5 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
+const path = require("path");
 
 let mainWindow;
 
@@ -12,7 +13,7 @@ app.whenReady().then(() => {
     fullscreenable: false,
     webPreferences: {
       nodeIntegration: true,
-      preload: __dirname + "/preload.js",
+      preload: path.join(__dirname, "js/preload.js"),
       contextIsolation: true,
       enableRemoteModule: false,
     },
@@ -21,4 +22,12 @@ app.whenReady().then(() => {
   mainWindow.setMenu(null);
 
   mainWindow.loadFile("index.html");
+});
+
+ipcMain.on("minimize", (event) => {
+  mainWindow.minimize();
+});
+
+ipcMain.on("close", (event) => {
+  mainWindow.close();
 });
