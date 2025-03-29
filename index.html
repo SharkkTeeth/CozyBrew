@@ -14,48 +14,49 @@
     <title>CozyBrew</title>
   </head>
   <body>
-    <!--Barra de titulo-->
+    <div class="main-app">
+      <!--Barra de titulo-->
 
-    <div class="custom-titlebar">
-      <span>CozyBrew</span>
-      <div class="titlebar-buttons">
-        <button id="minimize-btn">-</button>
-        <button id="close-btn">X</button>
+      <div class="custom-titlebar">
+        <span>CozyBrew</span>
+        <div class="titlebar-buttons">
+          <button id="minimize-btn">-</button>
+          <button id="close-btn">X</button>
+        </div>
+      </div>
+
+      <!--Primera pantalla-->
+      <div id="pantalla-inicio">
+        <h1>Selecciona tu bebida</h1>
+        <div class="selector">
+          <img
+            src="assets/espresso.png"
+            alt="Espresso"
+            class="bebida seleccionada"
+            onclick="seleccionarBebida('espresso', 5)"
+          />
+          <img
+            src="assets/cappuccino.png"
+            alt="Cappuccino"
+            onclick="seleccionarBebida('cappuccino', 10)"
+          />
+          <img
+            src="assets/espresso.png"
+            alt="Latte"
+            onclick="seleccionarBebida('latte', 15)"
+          />
+        </div>
+        <button id="startBtn" onclick="mostrarTemporizador()">Start</button>
+      </div>
+
+      <!--Segunda ppantalla-->
+      <div id="pantalla-temporizador" style="display: none">
+        <h1>Temporizador Pomodoro</h1>
+        <div id="timer">00:00</div>
+        <button id="startStopBtn" onclick="toggleTimer()">iniciar</button>
+        <button id="resetBtn" onclick="resetTimer()">Reiniciar</button>
       </div>
     </div>
-
-    <!--Primera pantalla-->
-    <div id="pantalla-inicio">
-      <h1>Selecciona tu bebida</h1>
-      <div class="selector">
-        <img
-          src="assets/espresso.png"
-          alt="Espresso"
-          class="bebida seleccionada"
-          onclick="seleccionarBebida('espresso', 5)"
-        />
-        <img
-          src="assets/cappuccino.png"
-          alt="Cappuccino"
-          onclick="seleccionarBebida('cappuccino', 10)"
-        />
-        <img
-          src="assets/espresso.png"
-          alt="Latte"
-          onclick="seleccionarBebida('latte', 15)"
-        />
-      </div>
-      <button id="startBtn" onclick="mostrarTemporizador()">Start</button>
-    </div>
-
-    <!--Segunda ppantalla-->
-    <div id="pantalla-temporizador" style="display: none">
-      <h1>Temporizador Pomodoro</h1>
-      <div id="timer">00:00</div>
-      <button id="startStopBtn" onclick="toggleTimer()">iniciar</button>
-      <button id="resetBtn" onclick="resetTimer()">Reiniciar</button>
-    </div>
-
     <!--Enlace de Script-->
     <script src="js/renderer.js"></script>
     <script src="js/script.js"></script>

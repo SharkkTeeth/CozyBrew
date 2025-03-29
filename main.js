@@ -13,6 +13,7 @@ app.whenReady().then(() => {
     fullscreenable: false,
     webPreferences: {
       nodeIntegration: true,
+      devTools: true,
       preload: path.join(__dirname, "js/preload.js"),
       contextIsolation: true,
       enableRemoteModule: false,
