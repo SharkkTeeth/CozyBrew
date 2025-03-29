@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
     <title>CozyBrew</title>
   </head>
   <body>
+    <!--Barra de titulo-->
+
+    <div class="custom-titlebar">
+      <span>CozyBrew</span>
+      <div class="titlebar-buttons">
+        <button id="minimize">-</button>
+        <button id="close">X</button>
+      </div>
+    </div>
+
     <!--Primera pantalla-->
     <div id="pantalla-inicio">
       <h1>Selecciona tu bebida</h1>
@@ -41,6 +57,7 @@
     </div>
 
     <!--Enlace de Script-->
+    <script src="js/renderer.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
